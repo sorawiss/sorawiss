@@ -53,13 +53,13 @@ body {
 }
 
 h1 {
-  @apply text-5xl md:text-7xl font-bold;
+  @apply text-5xl md:text-7xl font-bold text-ball-primary ;
 }
 
 @theme inline {
-  --color-accent: #c61b28;
+  --color-ball-accent: var(--ball-accent);
   --color-ball-white: var(--ball-white);
-  --color-primary: #323233;
+  --color-ball-primary: var(--ball-primary);
   --animate-marquee: marquee var(--duration) infinite linear;
   --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
   --color-sidebar-ring: var(--sidebar-ring);
@@ -123,6 +123,8 @@ h1 {
 }
 
 :root {
+  --ball-primary: #323233;
+  --ball-accent: #c61b28;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
