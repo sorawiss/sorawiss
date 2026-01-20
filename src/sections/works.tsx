@@ -39,21 +39,21 @@ export default function Works() {
         <h2 className="text-4xl font-bold">My Works</h2>
       </div>
 
-      <Marquee pauseOnHover className="[--duration:30s]">
+      <Marquee pauseOnHover className="[--duration:30s] ">
         {works.map((work) => (
-          <div key={work.name} className="mx-8 flex items-center justify-center opacity-50 hover:opacity-100 
-          ransition-opacity duration-300 grayscale hover:grayscale-0 cursor-pointer ">
+          <div key={work.name} className="mx-4 md:mx-8 flex items-center justify-center opacity-50 hover:opacity-100 
+          transition-opacity duration-300 grayscale hover:grayscale-0 cursor-pointer ">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={work.img}
               alt={work.name}
-              className="h-12 md:h-16 w-auto object-contain"
+              className="h-10 md:h-16 w-auto object-contain"
             />
           </div>
         ))}
       </Marquee>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-ball-white"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-ball-white"></div>
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 md:w-1/3 bg-gradient-to-r from-ball-white"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6 md:w-1/3 bg-gradient-to-l from-ball-white"></div>
     </div>
   )
 }

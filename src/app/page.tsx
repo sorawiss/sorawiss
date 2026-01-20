@@ -10,7 +10,7 @@ function App() {
 
 
   return (
-    <div className='bg-ball-white flex flex-col items-center justify-center max-w-5xl mx-auto '>
+    <div className='bg-ball-white flex flex-col items-center justify-center max-w-5xl overflow-hidden mx-auto '>
       <Navbar />
       <Home />
       <About />
