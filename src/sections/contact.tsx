@@ -10,10 +10,10 @@ export const Contact = () => {
                 <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-start">
                     {/* Left Column: Heading */}
                     <div className="md:col-span-1">
-                        <h2 className="text-6xl md:text-8xl font-bold tracking-tighter leading-[0.9] text-primary mb-8">
+                        <h1  className="text-5xl  font-bold tracking-tighter leading-[0.9] text-primary mb-8">
                             Let's <br />
                             Connect
-                        </h2>
+                        </h1>
                     </div>
 
                     {/* Right Column: Details */}
