@@ -42,11 +42,7 @@ export const Contact = () => {
                             </a>
                         </div>
 
-                        <div className="pt-12 border-t border-primary/10">
-                            <p className="text-ball-primary/40 text-sm">
-                                Based in Bangkok, Thailand
-                            </p>
-                        </div>
+                     
                     </div>
                 </div>
             </RevealOnScroll>
