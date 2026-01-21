@@ -8,6 +8,7 @@ const projects = [
         year: "2024",
         orientation: "vertical",
         image: "/project-images/maibood-1.png",
+        url: "https://www.figma.com/design/t0tCBSvqU1hkuPkaxO2tka/MaiBood?m=auto&t=6xWNBphezdei6c2o-1",
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ const projects = [
         year: "2025",
         orientation: "vertical",
         image: "/project-images/maibood-2.png",
+        url: "https://maibood.sorawiss.com/",
     },
     {
         id: 3,
@@ -24,6 +26,7 @@ const projects = [
         year: "2025",
         orientation: "horizontal",
         image: "/project-images/nithan-herb.png",
+        url: "https://nithanherb.com/",
     },
     {
         id: 4,
@@ -32,6 +35,7 @@ const projects = [
         year: "2025",
         orientation: "horizontal",
         image: "/project-images/driveddev.png",
+        url: "https://www.drived.dev/",
     },
     // {
     //     id: 5,
@@ -78,7 +82,7 @@ function WorkImages() {
                             index % 2 === 1 && project.orientation === "vertical" ? "md:mt-32" : ""
                         )}
                     >
-                        <div className="group flex flex-col gap-6 cursor-pointer">
+                        <a href={project.url} target="_blank" rel="noopener noreferrer" className="group flex flex-col gap-6 cursor-pointer">
                             <div className={cn(
                                 "relative w-full overflow-hidden bg-gray-100 transition-all duration-700 ease-out group-hover:scale-[0.98]",
                                 project.orientation === "horizontal" ? "aspect-video" : "aspect-4/5"
@@ -105,7 +109,7 @@ function WorkImages() {
                                     {project.category}
                                 </span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 ))}
             </div>

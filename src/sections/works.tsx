@@ -34,7 +34,7 @@ const works = [
   {
     name: "driveddev",
     img: "/works/driveddev.svg",
-    url: "https://www.driveddev.com/"
+    url: "https://www.drived.dev/"
   },
 ]
 
