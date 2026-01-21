@@ -4,8 +4,8 @@ export default [
         "id": "maibood",
         "title": "MaiBood",
         "description": "A sustainable marketplace for buying and selling surplus food items. Users can share photos, set prices, and connect with local community members to reduce food waste.",
-        "URL": "https://mai-bood-client.onrender.com/home",
-        "skill": ["React", "ExpressJS", "Tailwind", "AWS RDS", "AWS S3", "AWS EC2"],
+        "URL": "https://maibood.sorawiss.com/",
+        "skill": ["ReactJS", "NextJS", "ExpressJS", "Tailwind", "AWS RDS", "AWS S3", "AWS EC2"],
         "github": "https://github.com/sorawiss/MaiBood"
     },
     {
@@ -26,9 +26,9 @@ export default [
     {
         "id": "kbtg",
         "title": "AI Two-Way Fraud Detection & Prevention",
-        "description": "",
-        "URL": "https://maibood.sorawiss.com/welcome",
-        "skill": ["NextJS", "Tailwind", "Supabase"],
-        "github": "https://github.com/sorawiss/CPXT-MaiBood"
+        "description": "s a real-time security middleware that sits between the mobile app and the banking core. It uses on-device telemetry and AI to detect signs of coercion, remote access, and mule account patterns instantly.",
+        "URL": "https://kbtg.sorawiss.com/landingpage",
+        "skill": ["NextJS", "Tailwind", "Python", "ML"],
+        "github": "https://github.com/sorawiss/kbtg-hackathon"
     }
 ]
