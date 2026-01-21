@@ -3,39 +3,52 @@ import { cn } from "@/lib/utils"
 const projects = [
     {
         id: 1,
-        title: "Project Alpha",
+        title: "Maibood",
         category: "Branding",
         year: "2024",
         orientation: "vertical",
+        image: "/project-images/maibood-1.png",
     },
     {
         id: 2,
-        title: "Neon Horizon",
+        title: "CPAXT-Hackthon",
         category: "Web Design",
         year: "2023",
         orientation: "vertical",
+        image: "/project-images/maibood-2.png",
     },
     {
         id: 3,
-        title: "Abstract Form",
+        title: "Nithan Herb",
         category: "Art Direction",
         year: "2023",
         orientation: "horizontal",
+        image: "/project-images/nithan-herb.png",
     },
     {
         id: 4,
-        title: "Minimalist UI",
+        title: "DrivedDev",
         category: "Product Design",
         year: "2024",
         orientation: "horizontal",
+        image: "/project-images/driveddev.png",
     },
-    {
-        id: 5,
-        title: "Experimental Type",
-        category: "Typography",
-        year: "2024",
-        orientation: "vertical",
-    },
+    // {
+    //     id: 5,
+    //     title: "Experimental Type",
+    //     category: "Typography",
+    //     year: "2024",
+    //     orientation: "vertical",
+    //     image: "/project-images/nithan-herb.png",
+
+    // },
+    // {
+    //     id: 6,
+    //     title: "Experimental Type",
+    //     category: "Typography",
+    //     year: "2024",
+    //     orientation: "vertical",
+    // },
 ]
 
 
@@ -73,8 +86,13 @@ function WorkImages() {
                                 project.orientation === "horizontal" ? "aspect-video" : "aspect-4/5"
                             )}>
                                 {/* Mockup Placeholder */}
-                                <div className="absolute inset-0 flex items-center justify-center text-gray-400 group-hover:text-gray-900 transition-colors duration-500">
-                                    <span className="text-sm font-medium uppercase tracking-[0.2em]">Image Mockup</span>
+                                <div className="absolute inset-0 flex items-center justify-center text-gray-400 group-hover:text-gray-900 
+                                transition-colors duration-500">
+                                    {project.image ? (
+                                        <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                                    ) : (
+                                        <span className="text-sm font-medium uppercase tracking-[0.2em]">Image Mockup</span>
+                                    )}
                                 </div>
                             </div>
 
